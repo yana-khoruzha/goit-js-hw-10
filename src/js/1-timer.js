@@ -58,6 +58,7 @@ function updateTimer(endDate) {
   const initial = Date.now();
   const diff = endDate - initial;
   const { days, hours, minutes, seconds } = convertMs(diff);
+  console.log(days, hours, minutes, seconds);
 
   if (!isNaN(days) && !isNaN(hours) && !isNaN(minutes) && !isNaN(seconds)) {
     daysField.textContent = addLeadingZero(days);
