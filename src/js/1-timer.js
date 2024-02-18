@@ -66,6 +66,7 @@ function updateTimer(endDate) {
     minutesField.textContent = addLeadingZero(minutes);
     secondsField.textContent = addLeadingZero(seconds);
   }
+  
   if (diff <= 0) {
     stopTimer();
   }
